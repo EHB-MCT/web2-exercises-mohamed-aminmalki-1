@@ -25,6 +25,13 @@ function printHtml(pokemonData){
   console.log(pokemonData);
 
   document.getElementById('container').innerHTML += `
-  <div><img class="card-img-top" src="${pokemonData.sprites.front_default}" alt="img"></div>`
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="${pokemonData.sprites.front_default}" alt="img">
+  <div class="card-body">
+          <h5 class="card-title">${pokemonData.name}</h5>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-secondary">Go somewhere</a>
+        </div>
+      </div>`
 
 }
