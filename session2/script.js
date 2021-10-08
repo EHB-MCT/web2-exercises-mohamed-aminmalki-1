@@ -1,3 +1,4 @@
+import pokemonTeam from "./team.js"
 console.log("linked");
 window.onload = () =>{
 
@@ -24,13 +25,20 @@ function printHtml(pokemonData){
 
   console.log(pokemonData);
 
+  let type = new Array();
+
+  pokemonData.types.forEach(element => {
+    console.log(element.type.name)
+    type.push(element.type.name)
+  })
+
   document.getElementById('container').innerHTML += `
   <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="${pokemonData.sprites.front_default}" alt="img">
   <div class="card-body">
+          <h5 class="card-title">${pokemonData.id}</h5>
           <h5 class="card-title">${pokemonData.name}</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-          <a href="#" class="btn btn-secondary">Go somewhere</a>
+          <h5 class="card-title">${[...type]}</h5>
         </div>
       </div>`
 

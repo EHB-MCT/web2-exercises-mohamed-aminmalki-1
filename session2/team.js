@@ -10,3 +10,5 @@ class pokemonTeam{
         has the following pokemon: ${[...this.roster]}`;
     }
 }
+
+export default pokemonTeam
