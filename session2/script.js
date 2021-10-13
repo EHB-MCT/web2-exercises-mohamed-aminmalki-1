@@ -32,7 +32,7 @@ function printHtml(pokemonData){
     type.push(element.type.name)
   })
 
-  document.getElementById('container').innerHTML += `
+  document.getElementById('list').innerHTML += `
   <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="${pokemonData.sprites.front_default}" alt="img">
   <div class="card-body">
