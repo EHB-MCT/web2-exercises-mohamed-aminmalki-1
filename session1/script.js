@@ -9,9 +9,16 @@ window.onload = () =>{
         let email =  document.getElementById('emailInput').value
         let order =  document.getElementById('orderInput').value
 
-        
-        return `<p>The order for the customer ${name} is the following:  
-        ${order}. The customer may be notified by email: ${email}</p>`;
+        let orderdetails = {
+            name,email,order
+        }
+
+        document.getElementById('messages').innerHTML = printOrder(orderdetails);
+
     });
 
+    function printOrder(orderdetails) {
+        return `<p>The order for the customer ${orderdetails.name} is the following:  
+        ${orderdetails.order}. The customer may be notified by email: ${orderdetails.email}</p>`;
+    }
 }
