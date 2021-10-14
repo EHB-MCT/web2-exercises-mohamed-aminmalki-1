@@ -5,6 +5,9 @@ window.onload = () =>{
     document.getElementById('form')
     .addEventListener('submit', () => {
     
+        let resultNumber = document.getElementById('inputNumber').value;
+        console.log(resultNumber);
+
 
     });
 }
