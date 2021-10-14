@@ -5,9 +5,13 @@ window.onload = () =>{
     document.getElementById('form')
     .addEventListener('submit', () => {
     
-        let resultNumber = document.getElementById('inputNumber').value;
+        let inputNumber = document.getElementById('inputNumber').value;
         console.log(resultNumber);
 
-
+        if (randomNumber == inputNumber){
+            console.log(`You have guessed the mystery number!`)
+        }else {
+            console.log(`nice try`)
+        }
     });
 }
