@@ -1,6 +1,6 @@
 window.onload = () =>{
 
-    let randomNumber = Math.random() * (20 - 1) + 1;
+    let randomNumber = Math.floor(Math.random() * 21)
 
     document.getElementById('form')
     .addEventListener('submit', () => {
