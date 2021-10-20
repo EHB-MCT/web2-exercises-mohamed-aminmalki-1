@@ -8,4 +8,6 @@ fetch(baseurl + apikey)
     .then(response => response.json())
     .then(data => console.log(data))
 
+
+    
 }
