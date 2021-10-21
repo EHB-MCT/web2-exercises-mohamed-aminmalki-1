@@ -35,6 +35,8 @@ function searchPlayer(inputPlayer){
         </div>`
         })
     )
-    
+    function playerResult(){
+      //playerresult.limit = 20
+    }
 
     }
